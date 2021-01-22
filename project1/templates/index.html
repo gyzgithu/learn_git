@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+<body>
+<h1>欢迎来到flaks</h1>
+<img src="{{url_for('static',filename='img/2.jpg')}}" alt="">
+<h2>
+    姓名{{name}}
+</h2>
+<h2>
+    年龄{{age}}
+</h2>
+{% if gender %}
+<h2>
+   性别{{gender}}
+</h2>
+{% endif %}
+<script src="{{url_for('static',filename='js/main.js')}}">
+
+</script>
+
+</body>
+</html>
