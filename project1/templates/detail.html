@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+  {% block title %}
+        flask 世界{{pk}}
+        {% endblock  %}
+{% block main %}
+
+<div class="container">
+    </div>
+
+  <!-- List group -->
+ <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{article.title}}</h3>
+  </div>
+  <div class="panel-body">
+    {{article.content}}
+  </div>
+</div>
+</div>
+<a class="btn btn-default" href="/" role="button">返回</a>
+   {% endblock  %}
+
+
